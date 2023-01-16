@@ -36,32 +36,32 @@ const memberOne = {
 };
 
 const memberTwo = {
-  name: "Angela Caroll",
-  role: "Chief Editor",
+  name: `<h2>Angela Caroll</h2>`,
+  role: `<h3>Chief Editor</h3>`,
   profilePic: `<img src="../img/angela-caroll-chief-editor.jpg">`,
 };
 
 const memberThree = {
-  name: "Walter Gordon",
-  role: "Office Manager",
+  name: `<h2>Walter Gordon</h2>`,
+  role: `<h3>Office Manager</h3>`,
   profilePic: `<img src="../img/walter-gordon-office-manager.jpg">`,
 };
 
 const memberFour = {
-  name: "Angela Lopez",
-  role: "Social Media Manager",
+  name: `<h2>Angela Lopez</h2>`,
+  role: `<h3>Social Media Manager</h3>`,
   profilePic: `<img src="../img/angela-lopez-social-media-manager.jpg">`,
 };
 
 const memberFive = {
-  name: "Scott Estrada",
-  role: "Developer",
+  name: `<h2>Scott Estrada</h2>`,
+  role: `<h3>Developer</h3>`,
   profilePic: `<img src="../img/scott-estrada-developer.jpg">`,
 };
 
 const memberSix = {
-  name: "Barbara Ramos",
-  role: "Graphic Designer",
+  name: `<h2>Barbara Ramos</h2>`,
+  role: `<h3>Graphic Designer</h3>`,
   profilePic: `<img src="../img/barbara-ramos-graphic-designer.jpg">`,
 };
 

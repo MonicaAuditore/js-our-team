@@ -28,6 +28,7 @@ Organizzare i singoli membri in card/schede
 6. creo grafica in css per fare le card.
 */
 
+// MILESTONE 0
 const memberOne = {
   name: "Wayne Barnett",
   role: "Founder & CEO",
@@ -74,4 +75,14 @@ allMembers.push(
   memberFive,
   memberSix
 );
+
 console.log("allMembers", allMembers);
+
+// MILESTONE 1
+for (let i = 0; i < allMembers.length; i++) {
+  for (let key in allMembers[i]) {
+    console.log(key, allMembers[i][key]);
+  }
+}
+
+// MILESTONE 2

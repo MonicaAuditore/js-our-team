@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 1s;
+}
+
+img:hover {
+  scale: 1.5;
+}
+
+body {
+  padding: 90px 0;
+  display: flex;
+  justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.members div:nth-child(3n + 3) {
+  margin-bottom: 50px;
+  border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+.members {
+  text-align: center;
+  display: table-row-group;
+}
+
+.member0 {
+  padding: 7px 30px;
+}

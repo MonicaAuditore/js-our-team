@@ -86,3 +86,11 @@ for (let i = 0; i < allMembers.length; i++) {
 }
 
 // MILESTONE 2
+const membri = document.querySelector(".members");
+for (let i = 0; i < allMembers.length; i++) {
+  for (let key in allMembers[i]) {
+    membri.innerHTML += `<div class="memb member${[i]}">${
+      allMembers[i][key]
+    }</div>`;
+  }
+}

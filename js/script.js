@@ -16,5 +16,62 @@ Organizzare i singoli membri in card/schede
 */
 
 /*
+1. creo gli oggetti;
+2. li inserisco all'interno di un array;
 
+3. stampo in console le info di ogni membro;
+
+4. le stampo poi nel DOM;
+
+5. trasformo la stringa in foto;
+
+6. creo grafica in css per fare le card.
 */
+
+const memberOne = {
+  name: "Wayne Barnett",
+  role: "Founder & CEO",
+  image: "wayne-barnett-founder-ceo.jpg",
+};
+
+const memberTwo = {
+  name: "Angela Caroll",
+  role: "Chief Editor",
+  image: "angela-caroll-chief-editor.jpg",
+};
+
+const memberThree = {
+  name: "Walter Gordon",
+  role: "Office Manager",
+  image: "walter-gordon-office-manager.jpg",
+};
+
+const memberFour = {
+  name: "Angela Lopez",
+  role: "Social Media Manager",
+  image: "angela-lopez-social-media-manager.jpg",
+};
+
+const memberFive = {
+  name: "Scott Estrada",
+  role: "Developer",
+  image: "scott-estrada-developer.jpg",
+};
+
+const memberSix = {
+  name: "Barbara Ramos",
+  role: "Graphic Designer",
+  image: "barbara-ramos-graphic-designer.jpg",
+};
+
+allMembers = [];
+
+allMembers.push(
+  memberOne,
+  memberTwo,
+  memberThree,
+  memberFour,
+  memberFive,
+  memberSix
+);
+console.log("allMembers", allMembers);

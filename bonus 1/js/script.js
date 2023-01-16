@@ -28,48 +28,43 @@ Organizzare i singoli membri in card/schede
 6. creo grafica in css per fare le card.
 */
 
-let fotoWayne = document.createElement("img");
-fotoWayne.setAttribute("src", "img/wayne-barnett-founder-ceo.jpg");
+// BONUS 1
 
-// MILESTONE 0
 const memberOne = {
   name: "Wayne Barnett",
   role: "Founder & CEO",
-  image: "wayne-barnett-founder-ceo.jpg",
+  profilePic: `<img src="../img/wayne-barnett-founder-ceo.jpg">`,
 };
 
 const memberTwo = {
   name: "Angela Caroll",
   role: "Chief Editor",
-  image: "angela-caroll-chief-editor.jpg",
+  profilePic: `<img src="../img/angela-caroll-chief-editor.jpg">`,
 };
 
 const memberThree = {
   name: "Walter Gordon",
   role: "Office Manager",
-  image: "walter-gordon-office-manager.jpg",
+  profilePic: `<img src="../img/walter-gordon-office-manager.jpg">`,
 };
 
 const memberFour = {
   name: "Angela Lopez",
   role: "Social Media Manager",
-  image: "angela-lopez-social-media-manager.jpg",
+  profilePic: `<img src="../img/angela-lopez-social-media-manager.jpg">`,
 };
 
 const memberFive = {
   name: "Scott Estrada",
   role: "Developer",
-  image: "scott-estrada-developer.jpg",
+  profilePic: `<img src="../img/scott-estrada-developer.jpg">`,
 };
 
 const memberSix = {
   name: "Barbara Ramos",
   role: "Graphic Designer",
-  image: "barbara-ramos-graphic-designer.jpg",
+  profilePic: `<img src="../img/barbara-ramos-graphic-designer.jpg">`,
 };
-
-memberOne.image = fotoWayne;
-memberOne.image = document.body.appendChild(fotoWayne);
 
 allMembers = [];
 
@@ -84,15 +79,14 @@ allMembers.push(
 
 console.log("allMembers", allMembers);
 
-// MILESTONE 1
 for (let i = 0; i < allMembers.length; i++) {
   for (let key in allMembers[i]) {
     console.log(key, allMembers[i][key]);
   }
 }
 
-// MILESTONE 2
 const membri = document.querySelector(".members");
+
 for (let i = 0; i < allMembers.length; i++) {
   for (let key in allMembers[i]) {
     membri.innerHTML += `<div class="memb member${[i]}">${
@@ -101,19 +95,4 @@ for (let i = 0; i < allMembers.length; i++) {
   }
 }
 
-// BONUS 1
-// let fotoWayne = document.createElement("img");
-// fotoWayne.setAttribute("src", "img/wayne-barnett-founder-ceo.jpg");
-
-// console.log(allMembers[0][2]);
-
-// const images = [
-//   "img/wayne-barnett-founder-ceo.jpg",
-//   "img/angela-caroll-chief-editor.jpg",
-//   "img/walter-gordon-office-manager.jpg",
-//   "img/angela-lopez-social-media-manager.jpg",
-//   "img/scott-estrada-developer.jpg",
-//   "img/barbara-ramos-graphic-designer.jpg",
-// ];
-
-// memberOne.image = document.body.appendChild(fotoWayne);
+// ---------------------------------------------------------------------------------------

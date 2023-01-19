@@ -9,13 +9,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#f00, #f0f);
+  background-image: linear-gradient(
+    to right top,
+    #b3007c,
+    #98007d,
+    #79007e,
+    #56007d,
+    #27027a
+  );
   font-family: "Noto Sans", sans-serif;
 }
 
 h3 {
   padding: 20px 0 8px 0;
-  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-size: 17px;
 }
 
 h3,
@@ -23,11 +31,17 @@ h5 {
   color: #fffc;
 }
 
+h5 {
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+
 .profile-foto-container img {
   width: 156px;
   height: 156px;
   border-radius: 50%;
   object-fit: cover;
+  box-shadow: 0 15px 35px rgb(0 0 0 / 42%);
 }
 
 li {
@@ -66,5 +80,5 @@ li {
 .fa-brands,
 .fab {
   font-size: 28px;
-  color: #fff;
+  color: #ebebebd9;
 }

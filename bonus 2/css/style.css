@@ -4,41 +4,51 @@
   box-sizing: border-box;
 }
 
-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition: all 1s;
-}
-
-img:hover {
-  scale: 1.5;
-}
-
 body {
-  padding: 90px 0;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  font-family: "Josefin Sans", sans-serif;
+  align-items: center;
 }
 
-.members div:nth-child(3n + 3) {
-  margin-bottom: 50px;
-  border-bottom: 1px solid rgb(177, 177, 177);
+h3 {
+  padding-top: 20px;
 }
 
-.members {
-  text-align: center;
-  display: table-row-group;
+.profile-foto-container img {
+  width: 156px;
+  height: 156px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.member0,
-.member1,
-.member2,
-.member3,
-.member4,
-.member5 {
-  padding: 7px 30px;
+li {
+  list-style: none;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.member {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  margin-right: 40px;
+  border-radius: 8px;
+}
+
+.social {
+  padding-top: 20px;
+}
+
+.fa-brands,
+.fab {
+  font-size: 28px;
 }

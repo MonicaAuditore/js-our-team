@@ -16,83 +16,78 @@ Organizzare i singoli membri in card/schede
 */
 
 /*
-1. creo gli oggetti;
-2. li inserisco all'interno di un array;
-
-3. stampo in console le info di ogni membro;
-
-4. le stampo poi nel DOM;
-
-5. trasformo la stringa in foto;
-
-6. creo grafica in css per fare le card.
+1. creo un array di oggetti
+2. ciclo su tutto l'array per stampare in console ogni membro del team
+3. ciclo su tutto l'array per stampare in pagina nel DOM ogni membro del team
 */
 
-// BONUS 1
+// MILESTONE 0
 
-const memberOne = {
-  name: "Wayne Barnett",
-  role: "Founder & CEO",
-  profilePic: `<img src="../img/wayne-barnett-founder-ceo.jpg">`,
-};
+const team = [
+  {
+    name: "Wayne Barnett",
+    role: "Founder & CEO",
+    image: `<img src="../img/wayne-barnett-founder-ceo.jpg">`,
+  },
 
-const memberTwo = {
-  name: "Angela Caroll",
-  role: "Chief Editor",
-  profilePic: `<img src="../img/angela-caroll-chief-editor.jpg">`,
-};
+  {
+    name: "Angela Caroll",
+    role: "Chief Editor",
+    image: `<img src="../img/angela-caroll-chief-editor.jpg">`,
+  },
 
-const memberThree = {
-  name: "Walter Gordon",
-  role: "Office Manager",
-  profilePic: `<img src="../img/walter-gordon-office-manager.jpg">`,
-};
+  {
+    name: "Walter Gordon",
+    role: "Office Manager",
+    image: `<img src="../img/walter-gordon-office-manager.jpg">`,
+  },
 
-const memberFour = {
-  name: "Angela Lopez",
-  role: "Social Media Manager",
-  profilePic: `<img src="../img/angela-lopez-social-media-manager.jpg">`,
-};
+  {
+    name: "Angela Lopez",
+    role: "Social Media Manager",
+    image: `<img src="../img/angela-lopez-social-media-manager.jpg">`,
+  },
 
-const memberFive = {
-  name: "Scott Estrada",
-  role: "Developer",
-  profilePic: `<img src="../img/scott-estrada-developer.jpg">`,
-};
+  {
+    name: "Scott Estrada",
+    role: "Developer",
+    image: `<img src="../img/scott-estrada-developer.jpg">`,
+  },
 
-const memberSix = {
-  name: "Barbara Ramos",
-  role: "Graphic Designer",
-  profilePic: `<img src="../img/barbara-ramos-graphic-designer.jpg">`,
-};
+  {
+    name: "Barbara Ramos",
+    role: "Graphic Designer",
+    image: `<img src="../img/barbara-ramos-graphic-designer.jpg">`,
+  },
+];
 
-allMembers = [];
+console.log("team", team);
 
-allMembers.push(
-  memberOne,
-  memberTwo,
-  memberThree,
-  memberFour,
-  memberFive,
-  memberSix
-);
+// console.log(team[5].name);
+// console.log(team[5]["name"]);
 
-console.log("allMembers", allMembers);
-
-for (let i = 0; i < allMembers.length; i++) {
-  for (let key in allMembers[i]) {
-    console.log(key, allMembers[i][key]);
+// MILESTONE 1
+for (let i = 0; i < team.length; i++) {
+  for (let key in team[i]) {
+    console.log(key + ":" + team[i][key]);
   }
 }
 
-const membri = document.querySelector(".members");
+// MILESTONE 2
+const allTeam = document.querySelector(".team");
 
-for (let i = 0; i < allMembers.length; i++) {
-  for (let key in allMembers[i]) {
-    membri.innerHTML += `<div class="memb member${[i]}">${
-      allMembers[i][key]
-    }</div>`;
-  }
+for (let i = 0; i < team.length; i++) {
+  const newListItem = document.createElement("li");
+  // newListItem.innerHTML +=
+  //   team[i].name + " - " + team[i].role + " - " + team[i].image;
+
+  newListItem.innerHTML += `
+  <div class="member">
+  <div class="profile-foto-container">
+  ${team[i].image}
+  </div>
+<h3> ${team[i].name}</h3>
+<h5> ${team[i].role}</h5>
+  </div>`;
+  allTeam.append(newListItem);
 }
-
-// ---------------------------------------------------------------------------------------

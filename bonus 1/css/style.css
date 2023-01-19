@@ -3,12 +3,3 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.members div:nth-child(3n + 3) {
-  padding-bottom: 30px;
-}
-
-img {
-  width: 250px;
-  height: 250px;
-}

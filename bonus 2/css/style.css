@@ -9,10 +9,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(#f00, #f0f);
+  font-family: "Noto Sans", sans-serif;
 }
 
 h3 {
-  padding-top: 20px;
+  padding: 20px 0 8px 0;
+  font-weight: 300;
+}
+
+h3,
+h5 {
+  color: #fffc;
 }
 
 .profile-foto-container img {
@@ -34,14 +42,21 @@ li {
 }
 
 .member {
-  padding: 40px;
+  padding: 40px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
+  background-color: #00000099;
   margin-right: 40px;
   border-radius: 8px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+  margin: 30px;
+}
+
+.member:hover {
+  transform: translateY(-40px);
 }
 
 .social {
@@ -51,4 +66,5 @@ li {
 .fa-brands,
 .fab {
   font-size: 28px;
+  color: #fff;
 }
